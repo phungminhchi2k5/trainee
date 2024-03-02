@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, rgba(133, 45, 145, 1) 0%, rgba(49, 42, 108, 1) 100%);
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        #logotrainee {
+            width: 200px;
+            margin: 0 auto; 
+            display: block;
+            margin-top: 20px; 
+        }
+        #logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        #avatar {
+
+            width: 180px;
+            height: 220px;
+            border-radius: 0%; 
+            border-style: solid;
+            border-color: #6a78c3;
+            border-width: 5px;
+            margin-bottom: 20px;
+        } 
+        #ribon{
+            width: 500px;
+            margin-bottom:30px;
+        }
+
+        .highlights{
+           margin-left: 43px;
+        }
+
+        .left-column {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+
+            padding-right: 30px;
+        }  
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 470px;
+            margin-left: 30px;
+        }     
+        .card {
+            background: rgba(255, 255, 255, 0.3);
+            background-image: url(background.png);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 800px;
+            height: 500px;
+            padding: 35px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+        } 
+
+        .cardtitle{
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(26, 231, 26);
+            stroke: rgb(0, 0, 0);
+            stroke-width: 5px;
+            margin-bottom: 10px;
+        }
+        .name{
+            font-size: 20px;
+        }
+        .barcode{
+            margin-top: 20px;
+            margin-left: 250px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 30px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: white;
+            font-size: 28px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        } 
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+    </style>
+        <img id="logotrainee" src="logotrainee.png" alt="trainee logo">
+</head>
+<body>
+    <main>
+        <div class="card">
+ 
+        <div class="left-column">
+            <img id="logo" src="logo.png" alt="Logo">
+ 	        <img id="avatar" src="avatar.jpg" alt="Avatar">
+            <div class="highlights">
+                <h3>23520179</h3>
+
+            </div>
+        </div>
+        <div class="right-column">
+            <img id="ribon" src="riban.png" alt="riban">
+            <div class="cardtitle">
+                <h1>THẺ SINH VIÊN</h1>
+            </div>
+            <div class="name">
+                <h2>PHÙNG MINH CHÍ</h2>
+            </div>
+             <div class="year">
+                <p>Khóa 2023</p>
+            </div>
+             <div class="faculty">
+                <a>Kỹ thuật máy tính</a>
+            </div>  
+            <div class="barcode">
+                <img id="barcode" src="barcode.png" alt="barcode"> 
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
